@@ -1,0 +1,31 @@
+
+Bucardo - a table-based replication system
+
+DESCRIPTION:
+------------
+
+This repository is a fork of version 5.6.0 of Bucardo. I'll be trying out tests and configuring few scenarios to set up trigger based replication between two PostgreSQL clusters, using Bucardo.
+
+POSSIBLE ARCHITECTURE:
+----------------------
+
+Below are the list of possible architecture, to deploy Bucardo between two DB instances:
+
+1. **Bucardo on Server 1**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in the same node as DB Server 1.
+
+![Bucardo on Server 1](images/bucardo_on_db_server1.jpg)
+
+2. **Bucardo on Server 2**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in the same node as DB Server 2.
+
+![Bucardo on Server 2](images/bucardo_on_db_server2.jpg)
+
+3. **Bucardo on Middleware**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in a separate node, between the two DB instances.
+
+![Bucardo on Middleware](images/bucardo_on_middleware.jpg)
+
+TEST SCENARIO:
+--------------
+
+For our testing purposes, we'll be deploying Bucardo using Architecture 3 i.e. `Bucardo on a Middleware`. This should give us some extra information.
+
+Also, we'll be configuring multi-master replication for this.
