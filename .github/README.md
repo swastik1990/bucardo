@@ -13,15 +13,15 @@ Below are the list of possible architecture, to deploy Bucardo between two DB in
 
 1. **Bucardo on Server 1**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in the same node as DB Server 1.
 
-![Bucardo on Server 1](images/bucardo_on_db_server1.jpg)
+![Bucardo on Server 1](../images/bucardo_on_db_server1.jpg)
 
 2. **Bucardo on Server 2**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in the same node as DB Server 2.
 
-![Bucardo on Server 2](images/bucardo_on_db_server2.jpg)
+![Bucardo on Server 2](../images/bucardo_on_db_server2.jpg)
 
 3. **Bucardo on Middleware**: This idea involves performing Bucardo Replication between two host machines, where Bucardo resides in a separate node, between the two DB instances.
 
-![Bucardo on Middleware](images/bucardo_on_middleware.jpg)
+![Bucardo on Middleware](../images/bucardo_on_middleware.jpg)
 
 TEST SCENARIO:
 --------------
