@@ -29,3 +29,34 @@ TEST SCENARIO:
 For our testing purposes, we'll be deploying Bucardo using Architecture 3 i.e. `Bucardo on a Middleware`. This should give us some extra information.
 
 Also, we'll be configuring multi-master replication for this.
+
+PREREQUISITE:
+-------------
+
+To get started with the hand-on example, we need to have following components up an ready:
+
+- Two PostgreSQL Instances on a remote server
+- A Linux Machine *(preferably Ubuntu or any debian based)*
+- Git
+- OpenSSH Server
+- Basic Bash Command
+- Basic Perl Scripting
+
+SETUP:
+------
+
+For our tutorial, we'll be using following machines to set up our Bucardo Cluster:
+
+| S.N | Hostname | IP Address | Provision | Remarks | 
+| --- | -------- | ---------- | --------- | ------- |
+| 1 | pg-server1 | 192.168.0.1 | DB Server1 | Remote Server hosted on AWS |
+| 2 | pg-server1 | 192.168.0.2 | DB Server2 | Remote SErver hosted on GCP |
+| 3 | bucardo-server | 192.168.0.3 | Bucardo Middleware | Local Server hosted for Bucardo Deployment |
+
+## Execute the following commands in your Bucardo Middleware
+
+Clone the github repository of `Bucardo` to your local middleware machine:
+
+```bash
+git clone git@github.com:bucardo/bucardo.git
+```
